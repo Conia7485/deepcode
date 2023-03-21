@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home1/home1",
+    "pages/me1/me1",
+    "pages/food2/food2",
+    "pages/address/address",
+    "pages/mycomment/comment",
+    "pages/admin/admin",
+    "pages/myOrder/myOrder",
+    "pages/pay/pay",
+    "pages/service/service",
+    "cloud/getOenid",
+    "cloud/getFoodList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#DB7093",
+    "navigationBarTitleText": "倍佳味小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ff0000",
+    "selectedColor": "#DB7093",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/home-ok.png",
+        "iconPath": "image/home.png",
+        "pagePath": "pages/home1/home1",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/me-ok.png",
+        "iconPath": "image/me.png",
+        "pagePath": "pages/me1/me1",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userFuzzyLocation": {
+      "desc": "导航需要"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,5 @@
+<map class="map" markers="{{markers}}" data-maker="{{markers[0]}}" bindmarkertap="clickMap" longitude="113.3597" latitude="23.196749" scale="16" />
+<view>地址：广东省天河区迎龙路161号</view>
+<view>电话：12306</view>
+<view>微信：L714_811</view>
+

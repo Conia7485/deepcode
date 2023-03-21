@@ -1,0 +1,79 @@
+/* pages/home1/home1.wxss */
+page{
+   background: white;
+}
+/* 搜索区域 */
+.search_root{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  /* 设置上下居中 */
+  align-items:center ;
+}
+.search_input{
+  flex: 1;
+  height: 75rpx;
+  border: 1px solid #DB7093;
+  border-radius: 30rpx;
+  /* 左内距 */
+  padding-left: 30rpx;
+}
+
+.search_icon{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 20rpx;
+}
+/* 首页列表 */
+.category_root{
+  padding:30rpx 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.category_item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.category_item_image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.category_item_title{
+  font-size: 35rpx;
+margin-top: 12rpx;
+}
+/* 热门推荐 */
+.hot_tip{
+  color: #DB7093;
+  display: flex;
+  justify-content: space-between;
+}
+.hot_tip_title{
+  font-size: 40rpx;
+  margin-left: 30rpx;
+}
+.hot_tip_more{
+  padding-right: 20rpx;
+  padding-left: 30rpx;
+}
+/* 菜品列表 */
+.item{
+  display: flex;
+  margin: 10rpx 30rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+.item_img{
+  width: 160rpx;
+  margin-right: 25rpx;
+  height: 160rpx;
+}
+.item_sell{
+  font-size: 30rpx;
+  padding: 20rpx 0rpx;
+  color: gray;
+}
+.item_price{
+  font-size: 35rpx;
+  color: #f4c903;
+}

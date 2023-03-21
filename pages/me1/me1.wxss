@@ -1,0 +1,43 @@
+.header{
+  height: 400rpx;
+  background: #DB7093 ;
+}
+.login_btn{
+  margin-top: 100rpx;
+}
+.loginOut{
+  font-size: 33rpx;
+  margin-top: 20rpx;
+  color: antiquewhite;
+}
+.root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.touxiang{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+/* CSS画箭头 */
+.right_arrow{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  position: absolute;
+  right: 30rpx;
+  /* margin-left: 66%; */
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.item{
+  display: flex;
+  padding: 30rpx;
+  background: white;
+  align-items: center;
+  border-bottom: 1px solid #FFE4E1
+}

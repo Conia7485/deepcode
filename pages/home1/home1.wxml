@@ -1,0 +1,52 @@
+<!--轮播图-->
+<swiper indicator-dots="{{ture}}" indicator-active-color="#ff0000" autoplay="ture">
+<swiper-item wx:for="{{list}}">
+<image src="{{item.food1}}"></image>
+</swiper-item>
+</swiper>
+<!-- 搜索区域  -->
+<view class="search_root">
+<input bindconfirm='goSearch' confirm-type='search' bindinput="getSearch" class="search_input" placeholder="搜索菜品" />
+<image bindtap="goSearch" class="search_icon" src="../../image/search.png"></image>
+</view>
+<!-- 首页列表区域 -->
+<view class="category_root">
+<view bindtap='diancan' class="category_item" bindtap="click1">
+<image class="category_item_image" src="/image/diancan.png" />
+<text class="category_item_title">所有菜品</text>
+</view>
+
+<view bindtap="diandan" class="category_item" bindtap="click2">
+<image class="category_item_image" src="/image/order.png" />
+<text class="category_item_title">订单</text>
+</view>
+
+<view bindtap="soToAddress" class="category_item" bindtap="click3">
+<image class="category_item_image" src="/image/story.png" />
+<text class="category_item_title">店铺信息</text>
+</view>
+
+<view bindtap="kefu" class="category_item" bindtap="click4">
+<image class="category_item_image" src="/image/kefu.png" />
+<text class="category_item_title">客服中心</text>
+</view>
+
+</view>
+<!-- 菜品推荐 -->
+<view>
+<!-- 标题区域 -->
+<view class="hot_tip">
+<text class="hot_tip_title">热门推荐</text>
+<text class="hot_tip_more" bindtap="click1">更多>></text>
+</view>
+
+<!-- 菜品列表 -->
+<view wx:for="{{foodList}}" class="item">
+<image class="item_img" src="{{item.icon}}"></image>
+<view>
+  <view>{{item.name}}</view>
+  <view class="item_sell">销量:{{item.sell}}</view>
+  <view class="item_price">￥：{{item.price}}</view>
+</view>
+</view>
+</view>
